@@ -1,69 +1,72 @@
 body {
   background: white;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 6% auto 6% 6%;
-  grid-template-areas:
-    "nav-bar"
-    "main"
-    "footer1"
-    "footer2";
   font-family: arial, sans-serif;
+  display: flex;
+  flex-direction: column; 
 }
 #nav-bar {
-  grid-area: "nav-bar";
+  display: flex;
+  flex-direction: row;
   font-size: 13px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr 2fr;
-  row-gap: 10%;
+  justify-content: space-between;
+  
 }
-.left-links {
-  grid-row: 1/2;
-  justify-self: start;
-  display: grid;
+#left-links {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start; 
+  padding: 0px 0px 0px 0px;
 }
-.right-links {
-  grid-row: 2/3;
-  justify-self: end;
+#about{
+  padding: 0px 0px 0px 15px;
+}
+#store {
+  padding: 0px 0px 0px 15px;
+}
+#right-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px 30px 0px 30px;
+}
+#gmail {
+
+}
+#images {
+  padding: 0px 15px 0px 15px;
 }
 #app-menu {
     width: 100%;
     height: auto;
     max-width:20px;
 }
-
+#Sign-in{
+  margin: 0px 0px 0px 15px;
+}
 
 #main {
-  grid-area: main;
   font-size: 13px;
-  align-self:center;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 40% 33% 20% 7%;
-  grid-template-areas: 
-    "logo"
-    "searchbar"
-    "search-buttons"
-    "switch-language";
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  
 }
 #logo {
   width: 25%;
   height: auto;
-  grid-area: logo;
-  justify-self: center;
-  display: grid; 
+  margin: 47px 0px 0px 0px;
+  
 }
 #searchbar {
-  grid-area: searchbar;
-  justify-self: center;
+  
    
 }
 #search-button-div {
   font-size: 14px;
-  grid-area: search-buttons;
-  justify-self: center;
- 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .search-button {
   
@@ -71,15 +74,23 @@ body {
 
 
 #switch-language {
-  grid-area: switch-language;
-  justify-self:center;
-  display: grid; 
+  
 }
 #footer1 {
-  grid-area: footer1;
   font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 #footer2 {
-  grid-area:footer2;
   font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#left-links-footer {
+  justify-items: flex-start;
+}
+#right-links-footer {
+  justify-items: flex-end;
 }
