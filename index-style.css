@@ -1,9 +1,85 @@
 body {
   background: white;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 6% auto 6% 6%;
+  grid-template-areas:
+    "nav-bar"
+    "main"
+    "footer1"
+    "footer2";
+  font-family: arial, sans-serif;
 }
-
+#nav-bar {
+  grid-area: "nav-bar";
+  font-size: 13px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 2fr;
+  row-gap: 10%;
+}
+.left-links {
+  grid-row: 1/2;
+  justify-self: start;
+  display: grid;
+}
+.right-links {
+  grid-row: 2/3;
+  justify-self: end;
+}
 #app-menu {
     width: 100%;
     height: auto;
     max-width:20px;
+}
+
+
+#main {
+  grid-area: main;
+  font-size: 13px;
+  align-self:center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 40% 33% 20% 7%;
+  grid-template-areas: 
+    "logo"
+    "searchbar"
+    "search-buttons"
+    "switch-language";
+}
+#logo {
+  width: 25%;
+  height: auto;
+  grid-area: logo;
+  justify-self: center;
+  display: grid; 
+}
+#searchbar {
+  grid-area: searchbar;
+  justify-self: center;
+   
+}
+#search-button-div {
+  font-size: 14px;
+  grid-area: search-buttons;
+  justify-self: center;
+ 
+}
+.search-button {
+  
+}
+
+
+#switch-language {
+  grid-area: switch-language;
+  justify-self:center;
+  display: grid; 
+}
+#footer1 {
+  grid-area: footer1;
+  font-size: 15px;
+}
+#footer2 {
+  grid-area:footer2;
+  font-size: 14px;
 }
