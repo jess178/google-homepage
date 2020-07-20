@@ -3,12 +3,22 @@ body {
   font-family: arial, sans-serif;
   display: flex;
   flex-direction: column; 
+  color: black; 
 }
+a {
+  color: rgba(0,0,0,0.87);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 #nav-bar {
   display: flex;
   flex-direction: row;
   font-size: 13px;
   justify-content: space-between;
+  align-content: center;
   
 }
 #left-links {
@@ -42,6 +52,10 @@ body {
 }
 #Sign-in{
   margin: 0px 0px 0px 15px;
+  padding: 2px 5px 2px 5px;
+  color: white;
+  background-color: rgb(66,133,244);
+  border: none;
 }
 
 #main {
@@ -59,8 +73,8 @@ body {
   
 }
 #searchbar {
-  
-   
+  margin: 16px 0px 16px 0px;
+  width: 50%;
 }
 #search-button-div {
   font-size: 14px;
@@ -69,28 +83,65 @@ body {
   justify-content: center;
 }
 .search-button {
-  
+  background-color: rgb(242, 242, 242);
+  border: none;
+  padding: 3px 16px 3px 16px;
+  margin: 16px 3px 16px 0px;
+  width: auto;
+  radius: 4px;
 }
-
-
-#switch-language {
-  
+#french {
+  color: blue; 
+}
+.footer {
+  background-color: rgb(242, 242, 242);
+  color: rgba(0,0,0,0.54);
 }
 #footer1 {
   font-size: 15px;
+  justify-items: flex-end;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-content: center;
+  padding: 0px 0px 0px 15px;
+  margin: 50px 0px 0px 0px;
+  border: 5px;
+  border-color: rgb(100,100, 100);
+  
 }
 #footer2 {
   font-size: 14px;
+  justify-items: flex-end;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  justify-self: flex-end;
+  padding: 0px 0px 7px 0px
 }
 #left-links-footer {
   justify-items: flex-start;
+  color: rgba(0,0,0,0.54);
+}
+#advertising {
+  padding: 0px 0px 0px 15px;
+} 
+#business {
+  padding: 0px 0px 0px 15px;
+}
+#how-search-works {
+  padding: 0px 0px 0px 15px;
 }
 #right-links-footer {
   justify-items: flex-end;
+  color: rgba(0,0,0,0.54);
+}
+#privacy {
+  padding: 0px 0px 0px 15px;
+}
+#terms {
+  padding: 0px 0px 0px 15px;
+}
+#settings {
+  padding: 0px 15px 0px 15px;
 }
